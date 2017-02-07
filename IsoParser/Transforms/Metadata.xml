@@ -1,10 +1,47 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-    <!--
+  <!--
   This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
   
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+	<!-- com.coremedia.iso.boxes -->
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/interface[@name='Box']/method[@name='getType' 
+	    and count(parameter)=0]" name="propertyName" />
+	
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='FreeBox']/method[@name='getType' 
+        and count(parameter)=0]" name="propertyName" />
+	
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setBaseOffsetSize' 
+	    and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getBaseOffsetSize' 
+        and count(parameter)=0]" name="propertyName" />
+	
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setIndexSize' 
+        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getIndexSize' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setItems' 
+        and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.coremedia.iso.boxes.ItemLocationBox.Item&gt;']]" name="propertyName" />
+    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getItems' 
+        and count(parameter)=0]" name="propertyName" />
+	
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.mdat']/class[@name='MediaDataBox']/method[@name='getType' 
+        and count(parameter)=0]" name="propertyName" />
+	
+	
+    <!-- com.googlecode.mp4parser -->
+	<remove-node path="/api/package[@name='com.googlecode.mp4parser']/class[@name='RequiresParseDetailAspect']/method[@name='before']" />
+	
+	<attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='AbstractBox']/method[@name='getType' 
+	    and count(parameter)=0]" name="propertyName" />
+	
+    <attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='AbstractContainerBox']/method[@name='getType' 
+	    and count(parameter)=0]" name="propertyName" />
+	
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.samplegrouping']/class[@name='GroupEntry']/method[@name='getType' 
+        and count(parameter)=0]" name="propertyName" />
 </metadata>
