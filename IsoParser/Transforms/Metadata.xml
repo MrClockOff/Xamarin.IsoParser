@@ -28,7 +28,24 @@
         and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.coremedia.iso.boxes.ItemLocationBox.Item&gt;']]" name="propertyName" />
     <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getItems' 
         and count(parameter)=0]" name="propertyName" />
-	
+
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setLengthSize' 
+        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getLengthSize' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setOffsetSize' 
+        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getOffsetSize' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<!-- com.coremedia.iso.boxes.sampleentry -->
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/interface[@name='SampleEntry']/method[@name='setDataReferenceIndex' 
+        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+    <attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/interface[@name='SampleEntry']/method[@name='getDataReferenceIndex' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<!-- com.coremedia.iso.boxes.mdat -->
 	<attr path="/api/package[@name='com.coremedia.iso.boxes.mdat']/class[@name='MediaDataBox']/method[@name='getType' 
         and count(parameter)=0]" name="propertyName" />
 	
@@ -41,7 +58,8 @@
 	
     <attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='AbstractContainerBox']/method[@name='getType' 
 	    and count(parameter)=0]" name="propertyName" />
-	
+
+	<!-- com.googlecode.mp4parser.boxes.mp4.samplegrouping -->
 	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.samplegrouping']/class[@name='GroupEntry']/method[@name='getType' 
         and count(parameter)=0]" name="propertyName" />
 </metadata>
