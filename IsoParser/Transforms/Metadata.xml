@@ -7,115 +7,92 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
-	<!-- com.coremedia.iso.boxes -->
-	<attr path="/api/package[@name='com.coremedia.iso.boxes']/interface[@name='Box']/method[@name='getType' 
-	    and count(parameter)=0]" name="propertyName" />
-	
-	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='FreeBox']/method[@name='getType' 
-        and count(parameter)=0]" name="propertyName" />
-	
-	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setBaseOffsetSize' 
-	    and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getBaseOffsetSize' 
-        and count(parameter)=0]" name="propertyName" />
-	
-	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setIndexSize' 
-        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getIndexSize' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setItems' 
-        and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.coremedia.iso.boxes.ItemLocationBox.Item&gt;']]" name="propertyName" />
-    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getItems' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setLengthSize' 
-        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getLengthSize' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='setOffsetSize' 
-        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='getOffsetSize' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<!-- com.coremedia.iso.boxes.sampleentry -->
-	<attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/interface[@name='SampleEntry']/method[@name='setDataReferenceIndex' 
-        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-    <attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/interface[@name='SampleEntry']/method[@name='getDataReferenceIndex' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/class[@name='AbstractSampleEntry']/method[@name='setDataReferenceIndex' 
-        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-    <attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/class[@name='AbstractSampleEntry']/method[@name='getDataReferenceIndex' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<!-- com.coremedia.iso.boxes.mdat -->
-	<attr path="/api/package[@name='com.coremedia.iso.boxes.mdat']/class[@name='MediaDataBox']/method[@name='getType' 
-        and count(parameter)=0]" name="propertyName" />
-	
-	
-    <!-- com.googlecode.mp4parser -->
-	<remove-node path="/api/package[@name='com.googlecode.mp4parser']/class[@name='RequiresParseDetailAspect']/method[@name='before']" />
-
-	<attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='RequiresParseDetailAspect']/field[@name='ajc$perSingletonInstance']" name="managedName">SingletonInstance</attr>
-	
-	<attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='AbstractBox']/method[@name='getType' 
-	    and count(parameter)=0]" name="propertyName" />
-	
-    <attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='AbstractContainerBox']/method[@name='getType' 
-	    and count(parameter)=0]" name="propertyName" />
-
+	<!-- com.googlecode.mp4parser -->
+	<remove-node path="/api/package[@name='com.googlecode.mp4parser']/class[@name='RequiresParseDetailAspect']" />
 	<attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='Version']/field[@name='VERSION']" name="managedName">CurrentVersion</attr>
 
-	<!-- com.googlecode.mp4parser.boxes.piff -->
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfrfBox']/method[@name='getEntries' 
-        and count(parameter)=0]" name="propertyName" />
 
-    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfxdBox']/method[@name='getFragmentAbsoluteDuration' 
-        and count(parameter)=0]" name="propertyName" />
 
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfxdBox']/method[@name='getFragmentAbsoluteTime' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<!-- com.googlecode.mp4parser.boxes.mp4 -->
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4']/class[@name='AbstractDescriptorBox']/method[@name='getData' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4']/class[@name='AbstractDescriptorBox']/method[@name='getDescriptor' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<!-- com.googlecode.mp4parser.boxes.mp4.samplegrouping -->
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.samplegrouping']/class[@name='GroupEntry']/method[@name='getType' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<!-- com.googlecode.mp4parser.boxes.mp4.objectdescriptors -->
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='setAudioObjectType' 
-        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getAudioObjectType' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='setChannelConfiguration' 
-        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getChannelConfiguration' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getExtensionAudioObjectType' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='setSamplingFrequency' 
-        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
-    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getSamplingFrequency' 
-        and count(parameter)=0]" name="propertyName" />
-
-	<!-- com.googlecode.mp4parser.authoring.tracks -->
-	<attr path="/api/package[@name='com.googlecode.mp4parser.authoring.tracks']/class[@name='H264TrackImpl.SliceHeader.SliceType']" name="managedName">H264TrackImpl.SliceHeader.SliceTypeEnum</attr>
-
-	<!-- com.googlecode.mp4parser.h264 -->
+    <!-- com.googlecode.mp4parser.h264 -->
     <attr path="/api/package[@name='com.googlecode.mp4parser.h264']/class[@name='Debug']/field[@name='debug']" name="managedName">EnableDebug</attr>
+
 	
     <!-- com.googlecode.mp4parser.h264.model -->
-	<attr path="/api/package[@name='com.googlecode.mp4parser.h264.model']/class[@name='VUIParameters']/field[@name='bitstreamRestriction']" name="managedName">bitstreamRestrictions</attr>
+    <attr path="/api/package[@name='com.googlecode.mp4parser.h264.model']/class[@name='ScalingList']/field[@name='scalingList']" name="managedName">ScalingLists</attr>
+
+
+	<!-- com.coremedia.iso.boxes -->
+    <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='AlbumBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='AuthorBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ChunkOffset64BitBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ClassificationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='CompositionShiftLeastGreatestAtom']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='CompositionTimeToSample']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='CopyrightBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='DataEntryUrlBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='DataEntryUrnBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='DescriptionBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='EditListBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='FileTypeBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='FreeSpaceBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='GenreBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='HandlerBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='HintMediaHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemDataBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ItemLocationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='KeywordsBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='MediaHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='MovieHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='NullMediaHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='OmaDrmAccessUnitFormatBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='OriginalFormatBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='PerformerBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='ProgressiveDownloadInformationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='RatingBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='RecordingYearBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SampleDependencyTypeBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SampleSizeBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SampleToChunkBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SchemeTypeBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SoundMediaHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='StaticChunkOffsetBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SubSampleInformationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SubtitleMediaHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SyncSampleBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='TimeToSampleBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
 	
-	<attr path="/api/package[@name='com.googlecode.mp4parser.h264.model']/class[@name='ScalingList']/field[@name='scalingList']" name="managedName">ScalingLists</attr>
+
+
+	<!-- com.coremedia.iso.boxes.apple -->
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.apple']/class[@name='AppleDataRateBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.apple']/class[@name='AppleDataReferenceBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.apple']/class[@name='AppleLosslessSpecificBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+	
+	<!-- com.coremedia.iso.boxes.mdat -->
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.mdat']/class[@name='SampleList']/method[@name='get']" name="managedName">GetAt</attr>
+
+
+	<!-- com.coremedia.iso.boxes.dece -->
+    <attr path="/api/package[@name='com.coremedia.iso.boxes.dece']/class[@name='TrickPlayBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+
+	<!-- com.coremedia.iso.boxes.fragment -->
+    <attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='MovieExtendsHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='MovieFragmentHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='MovieFragmentRandomAccessOffsetBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='SegmentTypeBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='TrackExtendsBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='TrackFragmentBaseMediaDecodeTimeBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='TrackFragmentHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='TrackFragmentRandomAccessBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.fragment']/class[@name='TrackRunBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+
+	<!-- com.coremedia.iso.boxes.sampleentry -->
+    <attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/class[@name='AmrSpecificBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/class[@name='AmrSpecificBox']/method[@name='getContent']" name="visibility">protected</attr>
+
+	<!-- com.coremedia.iso.boxes.threegpp26244 -->
+    <attr path="/api/package[@name='com.coremedia.iso.boxes.threegpp26244']/class[@name='LocationInformationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
 </metadata>
