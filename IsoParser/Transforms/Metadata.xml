@@ -45,6 +45,11 @@
     <attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/interface[@name='SampleEntry']/method[@name='getDataReferenceIndex' 
         and count(parameter)=0]" name="propertyName" />
 
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/class[@name='AbstractSampleEntry']/method[@name='setDataReferenceIndex' 
+        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+    <attr path="/api/package[@name='com.coremedia.iso.boxes.sampleentry']/class[@name='AbstractSampleEntry']/method[@name='getDataReferenceIndex' 
+        and count(parameter)=0]" name="propertyName" />
+
 	<!-- com.coremedia.iso.boxes.mdat -->
 	<attr path="/api/package[@name='com.coremedia.iso.boxes.mdat']/class[@name='MediaDataBox']/method[@name='getType' 
         and count(parameter)=0]" name="propertyName" />
@@ -59,7 +64,43 @@
     <attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='AbstractContainerBox']/method[@name='getType' 
 	    and count(parameter)=0]" name="propertyName" />
 
+	<!-- com.googlecode.mp4parser.boxes.piff -->
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfrfBox']/method[@name='getEntries' 
+        and count(parameter)=0]" name="propertyName" />
+
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfxdBox']/method[@name='getFragmentAbsoluteDuration' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfxdBox']/method[@name='getFragmentAbsoluteTime' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<!-- com.googlecode.mp4parser.boxes.mp4 -->
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4']/class[@name='AbstractDescriptorBox']/method[@name='getData' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4']/class[@name='AbstractDescriptorBox']/method[@name='getDescriptor' 
+        and count(parameter)=0]" name="propertyName" />
+
 	<!-- com.googlecode.mp4parser.boxes.mp4.samplegrouping -->
 	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.samplegrouping']/class[@name='GroupEntry']/method[@name='getType' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<!-- com.googlecode.mp4parser.boxes.mp4.objectdescriptors -->
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='setAudioObjectType' 
+        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getAudioObjectType' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='setChannelConfiguration' 
+        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getChannelConfiguration' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getExtensionAudioObjectType' 
+        and count(parameter)=0]" name="propertyName" />
+
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='setSamplingFrequency' 
+        and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getSamplingFrequency' 
         and count(parameter)=0]" name="propertyName" />
 </metadata>
