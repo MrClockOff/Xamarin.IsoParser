@@ -12,7 +12,47 @@
 	<attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='Version']/field[@name='VERSION']" name="managedName">CurrentVersion</attr>
 
 
+	<!-- com.googlecode.mp4parser.boxes -->
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes']/class[@name='AC3SpecificBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes']/class[@name='AbstractSampleEncryptionBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes']/class[@name='AbstractTrackEncryptionBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes']/class[@name='DTSSpecificBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes']/class[@name='EC3SpecificBox']/method[@name='getContentSize']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes']/class[@name='EC3SpecificBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes']/class[@name='EC3SpecificBox']/method[@name='getContent']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes']/class[@name='MLPSpecificBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
 
+
+	<!-- com.googlecode.mp4parser.boxes.apple -->
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.apple']/class[@name='Utf8AppleDataBox']/method[@name='writeData']" name="visibility">protected</attr>
+
+
+	<!-- com.googlecode.mp4parser.boxes.basemediaformat -->
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.basemediaformat']/class[@name='AvcNalUnitStorageBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+   
+
+	<!-- com.googlecode.mp4parser.boxes.dece -->
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.dece']/class[@name='AssetInformationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.dece']/class[@name='BaseLocationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	
+
+	<!-- com.googlecode.mp4parser.boxes.microsoft -->
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.microsoft']/class[@name='XtraBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+
+	<!-- com.googlecode.mp4parser.boxes.mp4 -->
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4']/class[@name='AbstractDescriptorBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+
+	<!-- com.googlecode.mp4parser.boxes.piff -->
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfrfBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfxdBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+
+	<!-- com.googlecode.mp4parser.boxes.threegpp26245 -->
+    <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.threegpp26245']/class[@name='FontTableBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	
+	
     <!-- com.googlecode.mp4parser.h264 -->
     <attr path="/api/package[@name='com.googlecode.mp4parser.h264']/class[@name='Debug']/field[@name='debug']" name="managedName">EnableDebug</attr>
 
@@ -20,6 +60,11 @@
     <!-- com.googlecode.mp4parser.h264.model -->
     <attr path="/api/package[@name='com.googlecode.mp4parser.h264.model']/class[@name='ScalingList']/field[@name='scalingList']" name="managedName">ScalingLists</attr>
 
+
+	<!-- com.googlecode.mp4parser.authoring.tracks -->
+    <remove-node path="/api/package[@name='com.googlecode.mp4parser.authoring.tracks']/class[@name='Avc1ToAvc3TrackImpl.ReplaceSyncSamplesList']" />
+	<remove-node path="/api/package[@name='com.googlecode.mp4parser.authoring.tracks']/class[@name='ReplaceSampleTrack.ReplaceASingleEntryList']" />
+	
 
 	<!-- com.coremedia.iso.boxes -->
     <attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='AlbumBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
@@ -60,17 +105,20 @@
 	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SubtitleMediaHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
 	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='SyncSampleBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
 	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='TimeToSampleBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='TitleBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='TrackHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='TrackHeaderBox']/method[@name='getContent']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='TrackReferenceTypeBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='UnknownBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='UserBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='VideoMediaHeaderBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes']/class[@name='XmlBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
 	
-
-
+    
 	<!-- com.coremedia.iso.boxes.apple -->
 	<attr path="/api/package[@name='com.coremedia.iso.boxes.apple']/class[@name='AppleDataRateBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
 	<attr path="/api/package[@name='com.coremedia.iso.boxes.apple']/class[@name='AppleDataReferenceBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
 	<attr path="/api/package[@name='com.coremedia.iso.boxes.apple']/class[@name='AppleLosslessSpecificBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
-
-	
-	<!-- com.coremedia.iso.boxes.mdat -->
-	<attr path="/api/package[@name='com.coremedia.iso.boxes.mdat']/class[@name='SampleList']/method[@name='get']" name="managedName">GetAt</attr>
 
 
 	<!-- com.coremedia.iso.boxes.dece -->
@@ -95,4 +143,33 @@
 
 	<!-- com.coremedia.iso.boxes.threegpp26244 -->
     <attr path="/api/package[@name='com.coremedia.iso.boxes.threegpp26244']/class[@name='LocationInformationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+
+	<!-- com.coremedia.iso.boxes.vodafone -->
+    <attr path="/api/package[@name='com.coremedia.iso.boxes.vodafone']/class[@name='AlbumArtistBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.vodafone']/class[@name='ContentDistributorIdBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.vodafone']/class[@name='CoverUriBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.vodafone']/class[@name='LyricsUriBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+
+	<!-- com.mp4parser.iso14496.part12 -->
+    <attr path="/api/package[@name='com.mp4parser.iso14496.part12']/class[@name='BitRateBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.mp4parser.iso14496.part12']/class[@name='SampleAuxiliaryInformationOffsetsBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.mp4parser.iso14496.part12']/class[@name='SampleAuxiliaryInformationSizesBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+
+
+	<!-- com.mp4parser.iso14496.part15 -->
+    <attr path="/api/package[@name='com.mp4parser.iso14496.part15']/class[@name='AvcConfigurationBox']/method[@name='getContentSize']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.mp4parser.iso14496.part15']/class[@name='AvcConfigurationBox']/method[@name='_parseDetails']" name="visibility">protected</attr>
+	<attr path="/api/package[@name='com.mp4parser.iso14496.part15']/class[@name='AvcConfigurationBox']/method[@name='getContent']" name="visibility">protected</attr>
+
+
+
+
+
+	<attr path="/api/package[@name='com.coremedia.iso.boxes.mdat']/class[@name='SampleList']/method[@name='get']" name="managedName">_Get</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.authoring.samples']/class[@name='DefaultMp4SampleList']/method[@name='get']" name="managedName">_Get</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.authoring.samples']/class[@name='FragmentedMp4SampleList']/method[@name='get']" name="managedName">_Get</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.cenc']/class[@name='CencDecryptingSampleList']/method[@name='get']" name="managedName">_Get</attr>
+	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.cenc']/class[@name='CencEncryptingSampleList']/method[@name='get']" name="managedName">_Get</attr>
 </metadata>
