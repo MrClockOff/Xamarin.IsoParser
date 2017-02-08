@@ -64,6 +64,8 @@
     <attr path="/api/package[@name='com.googlecode.mp4parser']/class[@name='AbstractContainerBox']/method[@name='getType' 
 	    and count(parameter)=0]" name="propertyName" />
 
+	<attr path="api/package[@name='com.googlecode.mp4parser']/class[@name='Version']/field[@name='VERSION']" name="managedName">CurrentVersion</attr>
+
 	<!-- com.googlecode.mp4parser.boxes.piff -->
 	<attr path="/api/package[@name='com.googlecode.mp4parser.boxes.piff']/class[@name='TfrfBox']/method[@name='getEntries' 
         and count(parameter)=0]" name="propertyName" />
@@ -107,6 +109,11 @@
 	<!-- com.googlecode.mp4parser.authoring.tracks -->
 	<attr path="api/package[@name='com.googlecode.mp4parser.authoring.tracks']/class[@name='H264TrackImpl.SliceHeader.SliceType']" name="managedName">H264TrackImpl.SliceHeader.SliceTypeEnum</attr>
 
+	<!-- com.googlecode.mp4parser.h264 -->
+    <attr path="api/package[@name='com.googlecode.mp4parser.h264']/class[@name='Debug']/field[@name='debug']" name="managedName">EnableDebug</attr>
+	
     <!-- com.googlecode.mp4parser.h264.model -->
 	<attr path="api/package[@name='com.googlecode.mp4parser.h264.model']/class[@name='VUIParameters']/field[@name='bitstreamRestriction']" name="managedName">bitstreamRestrictions</attr>
+	
+	<attr path="api/package[@name='com.googlecode.mp4parser.h264.model']/class[@name='ScalingList']/field[@name='scalingList']" name="managedName">ScalingLists</attr>
 </metadata>
