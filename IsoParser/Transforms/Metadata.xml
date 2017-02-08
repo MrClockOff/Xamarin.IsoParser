@@ -103,4 +103,10 @@
         and count(parameter)=1 and parameter[1][@type='int']]" name="propertyName" />
     <attr path="/api/package[@name='com.googlecode.mp4parser.boxes.mp4.objectdescriptors']/class[@name='AudioSpecificConfig']/method[@name='getSamplingFrequency' 
         and count(parameter)=0]" name="propertyName" />
+
+	<!-- com.googlecode.mp4parser.authoring.tracks -->
+	<attr path="api/package[@name='com.googlecode.mp4parser.authoring.tracks']/class[@name='H264TrackImpl.SliceHeader.SliceType']" name="managedName">H264TrackImpl.SliceHeader.SliceTypeEnum</attr>
+
+    <!-- com.googlecode.mp4parser.h264.model -->
+	<attr path="api/package[@name='com.googlecode.mp4parser.h264.model']/class[@name='VUIParameters']/field[@name='bitstreamRestriction']" name="managedName">bitstreamRestrictions</attr>
 </metadata>
